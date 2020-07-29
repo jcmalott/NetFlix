@@ -1,8 +1,8 @@
-** HOME **
+# HOME 
 ![alt text](https://github.com/jcmalott/Netflix/blob/master/pictures/NetFlix_Home.PNG)
 
-** Login **
+# Login
 ![alt text](https://github.com/jcmalott/Netflix/blob/master/pictures/NetFlix_Login.PNG)
 
-** Browse **
+# Browse
 ![alt text](https://github.com/jcmalott/Netflix/blob/master/pictures/NetFlix_Browser.PNG)
