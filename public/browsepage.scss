@@ -1,0 +1,234 @@
+@import "./variables";
+
+.browse-header {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.browse-header {
+
+  & ul {
+    margin: 0 0;
+  }
+
+  & a {
+    font-size: 15px;
+  }
+
+  & a:hover {
+    color: #b3b3b3 !important;
+  }
+}
+
+.left-side-wrapper {
+  display: flex;
+  flex-flow: nowrap;
+  margin-top: 6px;
+}
+
+.navbar {
+  height: 50px;
+  background-color: transparent;
+}
+
+.navbar-logo {
+  height: 40px;
+  margin-left: 20px;
+  margin-right: 10px;
+
+  @media (max-width: 1200px) {
+      height: 20px;
+
+    .links-nav a {
+      font-size: 10px;
+    }
+  }
+}
+
+.links-dropdown {
+  position: relative;
+  margin-bottom: 10px;
+  display: none;
+  z-index: 2;
+
+  @media (max-width: 950px) {
+    display: block;
+  }
+}
+
+@media (max-width: 1200px) {
+  .links-nav a {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 950px) {
+  .links-nav a {
+    display: none;
+  }
+}
+
+.btn-dropdown {
+  background-color: transparent;
+  color: $netflix-text-color;
+  font-size: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  position: absolute;
+  min-width: 160px;
+  text-align: center;
+  left: -50px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.fa-sort-down {
+  margin-left: 5px;
+  font-size: 20px;
+}
+
+.header-form {
+  position: absolute;
+  right: 0;
+  margin-right: 20px;
+
+  & button {
+    background-color: transparent;
+    color: white;
+    margin-left: 15px;
+    border: none;
+  }
+
+  & a {
+    margin-left: 15px;
+  }
+}
+
+.browse-top {
+  position: relative;
+  padding-bottom: 17%;
+}
+
+.preview-image-container {
+  position: absolute;
+  top: -110px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.preview-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.browse-image-gradient {
+  position: absolute;
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.preview-description {
+  position: relative;
+  max-width: 35%;
+  margin-left: 60px;
+  margin-top: 3%;
+
+  & img {
+    width: 30vw;
+    margin-bottom: 20px;
+  }
+
+  & h3 {
+    font-size: 1.4vw;
+  }
+}
+
+.btn-grey {
+  background-color: rgb(128, 128, 128, 0.5);
+  color: $netflix-text-color;
+}
+
+.preview-btn-container{
+  white-space: nowrap;
+}
+
+.preview-buttons {
+  margin-top: 5%;
+  margin-right: 15px;
+  padding: 1.5% 4%;
+  font-size: 1vw;
+}
+
+.preview-btn-icon {
+  margin-right: 15px;
+}
+
+.btn-replay-container {
+  position: relative;
+  display: flex;
+  flex-grow: nowrap;
+  float: right;
+  padding: 0;
+}
+
+.btn-replay-text-container {
+  position: relative;
+  color: $netflix-text-color;
+  min-width: 7vw;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-left: solid;
+  padding-top: 6%;
+
+  & label {
+    padding-left: 15px;
+    float: left;
+    font-size: 1.3vw;
+    white-space: nowrap;
+  }
+}
+
+.fa-redo-alt {
+  min-width: 80px;
+  font-size: 1.3vw;
+  margin-top: 10%;
+  color: $netflix-text-color;
+  cursor: pointer;
+}
+
+.browse-body {
+  position: relative;
+  margin-top: -2.2vw;
+  min-height: 900px;
+}
+
+.row-container {
+  margin-left: 60px;
+  margin-bottom: 30px;
+}
+
+.row-header {
+  font-size: 1.2vw;
+  color: $netflix-text-color;
+  padding-bottom: 10px;
+  white-space: nowrap;
+}
+
+.browse-img {
+  width: 16vw;
+  margin-right: 5px;
+  min-width: 180px;
+}
+
+.footer-socials a {
+  font-size: 30px;
+  margin-right: 15px;
+  color: #757575;
+}

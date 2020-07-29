@@ -1,0 +1,447 @@
+@import "./variables";
+
+body, html {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  direction: ltr;
+  color: $netflix-text-color;
+}
+
+a {
+  text-decoration: none !important;
+  color: $netflix-text-color;
+
+  &:hover {
+    color: $netflix-text-color;
+  }
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1 {
+  font-size: 3.125rem;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: 1.625rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+// HOME PAGE
+.page-container {
+  position: absolute;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: $netflix-background-color;
+  min-width: 600px;
+}
+
+
+
+
+// Header Section
+.header-homepage-container {
+  position: relative;
+  max-width: 1920px;
+  height: 4rem;
+  margin: 0 auto;
+  padding-top: 20px;
+  z-index: 1;
+}
+
+.signIn-btn {
+  background-color: $netflix-red;
+  line-height: normal;
+  padding: 7px 17px;
+  font-size: 1rem;
+  float: right;
+  border-radius: 3px;
+  margin-top: .5rem;
+}
+
+
+
+
+// Body Section
+.basic-container {
+  position: relative;
+  padding: 70px 45px;
+  border-bottom: 8px solid $netflix-border-color;
+  margin-bottom: 0;
+}
+
+// Registeration Container
+.register-image-container {
+  top: -100px;
+  position: absolute;
+  z-index: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.register-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.register-image-gradient {
+  position: absolute;
+  background: $netflix-gradient-color;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.register-text {
+  position: relative;
+  padding: 75px 0;
+  max-width: 950px;
+  margin: 0 auto;
+  text-align: center;
+
+  & h1 {
+    max-width: 640px;
+    margin: 0 auto;
+  }
+
+  & h1 {
+    margin: 1rem auto;
+    max-width: 640px;
+  }
+}
+
+.register-email-form {
+  max-width: 950px;
+  margin: 0 auto;
+  padding-top: .85rem;
+  display: flex;
+  flex-flow: column-reverse;
+
+  & h3 {
+    text-align: center;
+  }
+
+  @media (max-width: 940px) {
+    flex-direction: column;
+  }
+}
+
+.register-email-form-container {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+
+  @media (max-width: 940px) {
+    flex-direction: column;
+  }
+}
+
+.register-email-input {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.register-email-field {
+  min-width: 450px;
+  height: 60px;
+  border: solid 1px #8c8c8c;
+  color: black;
+}
+
+.register-btn-start {
+  border-left: 1px solid #333;
+  font-size: 1.625rem;
+  height: 60px;
+  padding: 0 1em;
+  letter-spacing: .1px;
+  border-radius: 2px;
+  background-color: $netflix-red;
+
+  & span {
+    color: white;
+    font-size: 1.624rem;
+  }
+
+  &:focus {
+    box-shadow: none;
+    border-color: white;
+  }
+}
+
+
+
+
+// STORIES
+.story-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (max-width: 940px) {
+    flex-direction: column;
+  }
+}
+
+.story-flip-contents {
+  flex-flow: row-reverse;
+
+  @media (max-width: 940px) {
+    flex-direction: column;
+  }
+}
+
+.story-text {
+  width: 52%;
+  padding-right: 3rem;
+  z-index: 3;
+
+  @media (max-width: 940px) {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+}
+
+@media (max-width: 940px) {
+  .story-title {
+    font-size: 2.5rem;
+  }
+}
+
+.story-subtitle {
+  margin: 0.75em 0 0.25em;
+
+  @media (max-width: 940px) {
+    font-size: 1.25rem;
+  }
+}
+
+.device-container-outer {
+  width: 48%;
+
+  @media (max-width: 940px) {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 1em;
+  }
+}
+
+.device-container-inner {
+  margin: -5% -10% -5% 0;
+  position: relative;
+  overflow-y: hidden;
+}
+
+.display-screen {
+  position: relative;
+  z-index: 2;
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}
+
+.device-tv-img {
+  width: 100%;
+  height: 100%;
+  max-width: 73%;
+  max-height: 54%;
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.device-phone-img {
+  position: absolute;
+  z-index: 2;
+  padding: 0.5em 0.75em;
+  left: 50%;
+  bottom: 8%;
+  transform: translateX(-50%);
+  margin: 0 auto;
+  background: #000;
+  align-items: center;
+  width: 60%;
+  min-width: 15em;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 2em #000;
+  border-radius: 0.75em;
+}
+
+.device-desktop-img {
+  width: 100%;
+  height: 100%;
+  max-width: 63%;
+  max-height: 47%;
+  position: absolute;
+  top: 34%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.display-video {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  vertical-align: baseline;
+  object-fit: contain;
+}
+
+.phone-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.phone-movie-img {
+  height: 71.4px;
+}
+
+.phone-text {
+  flex-grow: 1;
+  flex-shrink: 1;
+  margin: 0.7em 2em;
+}
+
+.phone-title {
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.phone-subtitle {
+  font-size: 0.9em;
+  color: #0071eb;
+  font-weight: 400;
+}
+
+.phone-download-img {
+  height: 3.75em;
+  margin: auto;
+}
+
+
+
+
+// QUESTIONS
+.question-title {
+  text-align: center;
+  font-size: 3.125em;
+
+  @media (max-width: 940px) {
+    font-size: 2.5em;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 2em;
+  }
+}
+
+.question-list {
+  margin: 2em auto;
+  max-width: 815px;
+}
+
+.quesiton-list-item {
+  padding: 0;
+  border: 0;
+  margin-bottom: 0.5em;
+  background: #303030;
+  font-size: 1.7em;
+  text-align: left;
+
+  @media (max-width: 940px) {
+    font-size: 1.25em;
+  }
+}
+
+.question-button {
+  background-color: #303030;
+  color: white;
+  padding: 0.6em 0 0.6em 1.4em;
+  list-style-type: none;
+  cursor: pointer;
+  margin-bottom: 1px;
+  min-width: 400px;
+
+  &:focus,
+  &:hover {
+    background: #303030;
+    color: white;
+    outline: none;
+  }
+}
+
+.question-icon {
+  float: right;
+  margin-right: 0.8em;
+}
+
+
+
+
+// FOOTER SECTION
+.basic-footer-container {
+  position: relative;
+  padding: 70px 45px 0;
+  margin: 0 auto;
+  max-width: 1000px;
+  color: $netflix-link-color;
+}
+
+.footer-number {
+  color: $netflix-link-color;
+  margin-bottom: 30px;
+  margin-left: 5px;
+
+  &:hover {
+    text-decoration: underline !important;
+    color: $netflix-link-color;
+  }
+}
+
+.footer-links {
+  padding: 0;
+  margin: 0;
+  font-size: 13px;
+}
+
+.footer-link-item {
+  color: $netflix-link-color;
+  margin-bottom: 16px;
+  display: inline-block;
+  width: 25%;
+  padding-right: 12px;
+
+  &:hover {
+    text-decoration: underline !important;
+    color: $netflix-link-color;
+  }
+
+  @media (max-width: 740px) {
+    width: 33%;
+  }
+
+  @media (max-width: 600px) {
+    width: 50%;
+  }
+}
+
+.footer-copyright {
+  color: #757575;
+  font-size: 14px;
+}

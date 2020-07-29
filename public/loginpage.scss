@@ -1,0 +1,138 @@
+@import "./variables";
+
+.login-background {
+  position: absolute;
+  height: 100%;
+  min-height: 100vh;
+  width: 100%;
+  background-size: cover;
+  overflow: hidden;
+  index: -1;
+}
+
+.login-image {
+  min-height: 100%;
+  min-width: 100%;
+}
+
+.login-header {
+  position: relative;
+  width: 100%;
+  height: 4.5rem;
+  margin: 0 5%;
+  padding-top: 20px;
+}
+
+.login-body {
+  position: relative;
+  z-index: 1;
+  min-height: 75vh;
+  text-align: center;
+  margin: 200px 35vw 0;
+  padding: 0 5%;
+  max-width: 450px;
+
+  @media (max-width: 1200px){
+    margin-left: 20vw;
+  }
+}
+
+.login-container {
+  background-color: $login-background;
+  min-width: 430px;
+  min-height: 500px;
+  padding: 50px 65px;
+}
+
+.login-title {
+  color: $netflix-text-color;
+  font-size: 2em;
+  text-align: left;
+}
+
+.login-form-fields {
+  border-left: 1px solid #333;
+  min-height: 45px;
+  min-width: 300px;
+  border-radius: 7px;
+  letter-spacing: .5px;
+  font-size: 10px;
+  margin-top: 0.5em;
+  outline-width: 0;
+}
+
+.login-button {
+  margin-top: 2em;
+  background-color: $netflix-red;
+  color: $netflix-text-color;
+  font-size: 16px;
+}
+
+.checkbox-container {
+  color: $netflix-link-color;
+  min-width: 325px;
+  margin-top: 0.5em;
+  font-size: 14px;
+  margin-left: -18px;
+}
+
+.login-checkbox {
+  visibility: hidden;
+  position: relative;
+  height: 20px;
+  width: 20px;
+  right: -18px;
+  top: 5px;
+
+  & + span:before {
+    content: "\00a0";
+    position: relative;
+    left: -2px;
+    z-index: -1;
+    border: 1px solid black;
+    display: inline-block;
+    font: 16px;
+    height: 23px;
+    width: 23px;
+    background-color: $netflix-text-color;
+  }
+
+  &:checked + span:before {
+    content: "\2713";
+    background: $netflix-link-color;
+    color: black;
+    font-size: 16px;
+    font-weight: bolder;
+    top: 2px;
+  }
+}
+
+.login-link {
+  float: right;
+  color: $netflix-link-color;
+  text-align: center;
+  margin-top: 2px;
+
+  &:hover {
+    color: $netflix-link-color;
+    text-decoration: underline !important;
+  }
+}
+
+.login-container-bottom {
+  margin-top: 60px;
+  text-align: left;
+  color: $netflix-link-color;
+}
+
+.facebook-logo {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+}
+
+.sigin-footer-wrapper {
+  position: relative;
+  z-index: 1;
+  background-color: black;
+}
